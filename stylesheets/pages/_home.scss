@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.title {
+  @include abs-center;
+  text-align: center;
+  line-height: 1.2;
+
+  a {
+    font-size: 0.8em;
+  }
+}

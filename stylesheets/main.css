@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1; }
+
+button, button:hover, button:active, button:enabled {
+  border: none;
+  text-decoration: none;
+  margin: 0;
+  color: #ededed; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  font-family: "Lora", serif;
+  box-sizing: border-box; }
+
+body {
+  background: white;
+  line-height: 1.4; }
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+.title {
+  font-size: 2.2em;
+  font-weight: bold; }
+
+h1 {
+  font-size: 1.2em; }
+
+h2 {
+  font-size: 1em; }
+
+h3 {
+  font-size: 0.8em; }
+
+q {
+  font-style: italic; }
+
+input, textarea {
+  color: #6c6c6c;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+input:focus, textarea:focus {
+  color: #2d2d2d; }
+
+input[type=text], input[type=password], textarea {
+  height: 32pt;
+  padding: 10px;
+  margin: 5px 1px 3px 0;
+  font-size: 1em;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #d0d0d0;
+  -webkit-transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, border 0.2s ease-in-out; }
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: #dbca2e;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover, a:active, a:focus {
+    color: #2d2d2d; }
+
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: #2d2d2d;
+  font: normal 125%/1.4 "Lora", serif; }
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table; }
+
+/**
+ * Main content containers
+ * 1. Make the container full-width with a maximum width
+ * 2. Center it in the viewport
+ * 3. Leave some space on the edges, especially valuable on small screens
+ */
+.container {
+  max-width: 1180px;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  padding-left: 20px;
+  /* 3 */
+  padding-right: 20px;
+  /* 3 */
+  width: 100%;
+  /* 1 */ }
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0;
+  /* 1 */
+  text-indent: 101%;
+  white-space: nowrap; }
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.2; }
+  .title a {
+    font-size: 0.8em; }
+
+body {
+  overflow-x: hidden; }
