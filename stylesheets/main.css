@@ -113,9 +113,11 @@ input[type=text], input[type=password], textarea {
  * Basic styles for links
  */
 a {
-  color: #dbca2e;
+  color: #EFA82A;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: color .2s ease;
+  transition: color .2s ease; }
   a:hover, a:active, a:focus {
     color: #2d2d2d; }
 
@@ -185,7 +187,7 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
-.title {
+.landingTitle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -193,8 +195,10 @@ body {
           transform: translate(-50%, -50%);
   text-align: center;
   line-height: 1.2; }
-  .title a {
-    font-size: 0.8em; }
+  .landingTitle h1 {
+    font-size: 3em; }
+  .landingTitle a {
+    font-size: 2em; }
 
 body {
   overflow-x: hidden; }

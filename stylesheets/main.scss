@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
 
 // 1. Configuration and helpers
-@import 'abstracts/variables',
+@import
+'abstracts/variables',
 'abstracts/functions',
 'abstracts/mixins';
 
@@ -11,24 +12,29 @@
 //@import
 
 // 3. Base stuff
-@import 'base/reset',
+@import
+'base/reset',
 'base/base',
 'base/fonts',
 'base/typography',
 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/nav',
+@import
+'layout/nav',
 'layout/header',
 'layout/footer';
 
 // 5. Components
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import
+'pages/home',
+'pages/landing';
 
 // 7. Themes
-@import 'themes/default';
+@import
+'themes/default';
 
 body {
   overflow-x: hidden;
